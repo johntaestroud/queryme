@@ -13,12 +13,10 @@ body {
 	display: flex;
     flex-direction: column;
     min-height: 100%;
-	
 }
 
 .wrapper.indexPage {
     justify-content: center;
-    background-color: #000;
 }
 
 .mainSection {
@@ -77,6 +75,49 @@ body {
     width: 100%;
 }
 
+.header {
+    border-bottom: 1px solid #ebebeb;
+}
+
+.headerContent .logoContainer {
+    width: 150px;
+    padding: 5px 20px;
+    box-sizing: border-box; /* includes the width/padding */
+}
+
+.wrapper .headerContent {
+    display: flex;
+    align-items: center;
+}
+
+.headerContent .searchContainer {
+    flex: 1; /*highlights more available space*/
+}
+
+.headerContent .searchContainer form {
+    margin: 15px 0 28px 0; /*no margin right and left */
+}
+
+.headerContent .searchBarContainer {
+    height: 44px;
+    border-radius: 2px;
+    background-color: #545454;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);
+    width: 70%;
+    max-width: 630px;
+    box-sizing: border-box;
+    display: flex; /* fills in the available height */
+}
+
+.headerContent .searchBarContainer .searchBox {
+    flex: 1; /*use all of the remaining space*/
+    border: none;
+    background-color: transparent;
+    padding: 12px; /*pushes away from the edge*/
+    font-size: 16px;
+    color: #fff;
+
+}
 
 
 
